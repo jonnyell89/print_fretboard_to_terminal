@@ -1,0 +1,65 @@
+The chromatic scale provides the notes and indices to derive all other scales.
+
+All other scales are represented as a list of indices that are hardcoded into the program. 
+
+    These indices are used in tandem with a user defined starting point to iterate through the chromatic scale and return the correct notes from the desired scale.
+
+All standard chords are represented as a list of indices that are hardcoded into the program. 
+
+    These indices are used in tandem with a user defined starting point to iterate through the desired scale and return the correct notes from the desired chord.
+
+The indices for the standard scales are relative to the chromatic scale, and the indices for the standard chords are relative to the desired scales.
+
+Preserving the integer class type of a number allows for the application of arithmetic in the main body of functions.
+
+However, as all functions are called by a display formatting functions, these functions can also cast the integers to strings before the result of each function is displayed.
+
+The decision has been made to generate fresh fretboard representations for each chord configuration, rather than generate a single fretboard representation and continuously manipulate it.
+
+Remember that it is common best practice in computer programming to separate out logic, such as data generation and processing, from output, such as rendering and display.
+
+
+
+fretboard_patterns_app or Fretbored, or something like that.
+
+	The app is a simple fretboard visualisation, that challenges the user to do two things, or two variations of the same thing:
+
+		Given a chord name:
+		
+			Place the correct notes on the fretboard.
+			
+		Given a chord diagram:
+		
+			Write the correct chord name.
+			
+	Fretbored means that it can be easily picked up and put down again during the little gaps in the user's day.
+			
+	Target audience:
+	
+		Beginner to intermediate, or anyone with gaps in their knowledge of music theory.
+		
+		Players of stringed instruments.
+			
+	It must be simple:
+	
+		A plain visualisation
+		
+		A learning resource with an optional competitive edge.
+		
+	
+			
+	Scope for further development:
+	
+		Difficulty levels, incorporating a timer and increasing chord complexity.
+			
+		Accurate note audio for when a note is pressed by the user.
+		
+		Accessible chord library containing all chord variations.
+		
+		Visual breakdown of each chord and its construction.
+
+		Customisable fretboard, incorporating different tunings, and different numbers of strings.
+	
+
+
+The user can hold their phone as if it were the neck of a guitar, and the chord diagrams can respond to the user's fingertips, as if it were a real guitar.
